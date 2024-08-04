@@ -1,0 +1,29 @@
+<div class="parent-container">
+  <mat-card class="custom-card">
+    <h2>{{ isEditMode ? 'Edit Product' : 'Create Product' }}</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name" class="form-control" />
+        <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="text-danger">
+          Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="number" formControlName="quantity" class="form-control" />
+        <div *ngIf="productForm.get('quantity')?.invalid && productForm.get('quantity')?.touched" class="text-danger">
+          Quantity must be a non-negative number
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input id="price" type="number" formControlName="price" class="form-control" />
+        <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-danger">
+          Price must be a non-negative number
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">{{ isEditMode ? 'Update Product' : 'Create Product' }}</button>
+    </form>
+  </mat-card>
+</div>
