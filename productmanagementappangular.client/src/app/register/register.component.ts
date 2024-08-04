@@ -33,8 +33,6 @@ export class RegisterComponent {
         error => {
           this.message = 'Registration failed:';
           this.isError = true;
-
-          // Handle errors based on the response structure
           if (error.error && error.error.errors) {
             this.errors = error.error.errors.map((err: { description: string }) => err.description) || [error.message || 'Unknown error'];
           } else {

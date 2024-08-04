@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login/login.component';
 import { AuthService } from './Services/auth.service';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { NavbarComponent } from './navbar/navbar.component'; // Import the AuthService
+import { NavbarComponent } from './navbar/navbar.component'; 
 
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -38,7 +38,6 @@ import { ProductFormComponent } from './product-form/product-form.component';
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    // Add Angular Material Modules here
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,

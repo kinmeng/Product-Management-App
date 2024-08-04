@@ -101,7 +101,6 @@ namespace ProductManagementAppAngular.Server.Controllers
             return NoContent();
         }
 
-        // DELETE: api/product/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {

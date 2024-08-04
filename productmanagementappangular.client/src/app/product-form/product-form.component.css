@@ -1,16 +1,16 @@
 
 .parent-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
-  background-color: #f0f0f0; /* Optional: Add a background color */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #f0f0f0; 
 }
 
 .custom-card {
-  width: 600px; /* Adjust width as needed */
-  padding: 20px; /* Adjust padding as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Custom shadow */
+  width: 600px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 .form-group{
     margin: 3rem 0rem 3rem 0rem;

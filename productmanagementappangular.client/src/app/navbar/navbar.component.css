@@ -1,16 +1,16 @@
-/* Ensure the toolbar takes full width and aligns items correctly */
+
 mat-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Add space between the left-aligned items and the right-aligned items */
+
 .spacer {
   flex: 1;
 }
 
-/* Optional: Style the buttons if needed */
+
 mat-button {
   color: white;
 }

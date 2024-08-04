@@ -7,7 +7,7 @@ const PROXY_CONFIG = [
   {
     context: [
       "/weatherforecast",
-      "/api" // This will forward requests to the /api path to the backend
+      "/api" 
     ],
     target,
     secure: false,
